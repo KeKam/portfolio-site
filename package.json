@@ -12,9 +12,11 @@
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "gatsby": "^2.0.119",
     "react": "^16.8.1",
-    "react-dom": "^16.8.1"
+    "react-dom": "^16.8.1",
+    "reactstrap": "^7.1.0"
   },
   "repository": {
     "type": "git",

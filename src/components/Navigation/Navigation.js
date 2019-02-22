@@ -38,6 +38,11 @@ class Navigation extends Component {
                 </NavLink>
               </NavItem>
               <NavItem>
+                <NavLink href='#skillset'>
+                  SKILLSET
+                </NavLink>
+              </NavItem>
+              <NavItem>
                 <NavLink href='#projects'>
                   PROJECTS
                 </NavLink>

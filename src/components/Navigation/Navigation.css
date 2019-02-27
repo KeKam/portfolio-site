@@ -1,0 +1,25 @@
+.navbar {
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  border-bottom: none;
+}
+
+.black-background {
+  background-color: black !important;
+}
+
+.white-font {
+  color: white !important;
+}
+
+.black-font {
+  color: black !important;
+}
+

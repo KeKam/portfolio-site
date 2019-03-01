@@ -8,6 +8,7 @@ import {
   NavItem,
   NavLink,
   } from 'reactstrap';
+import Scrollspy from 'react-scrollspy';
 import './Navigation.css';
 
 class Navigation extends Component {
@@ -53,28 +54,33 @@ class Navigation extends Component {
           </NavbarBrand>
           <NavbarToggler className={navFontColor} onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className='ml-auto' navbar>
+            <Scrollspy 
+              items={ ['about', 'skillset', 'projects', 'contact'] }
+              currentClassName='is-current'
+              className={`${navFontColor} ml-auto navbar-nav`} 
+              navbar
+            >
               <NavItem>
-                <NavLink className={navFontColor} href='#about'>
+                <NavLink href='#about'>
                   ABOUT ME
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className={navFontColor} href='#skillset'>
+                <NavLink href='#skillset'>
                   SKILLSET
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className={navFontColor} href='#projects'>
+                <NavLink href='#projects'>
                   PROJECTS
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className={navFontColor} href='#contact'>
+                <NavLink href='#contact'>
                   CONTACT
                 </NavLink>
               </NavItem>
-            </Nav>
+            </Scrollspy>
           </Collapse>
         </Navbar>
       </div>

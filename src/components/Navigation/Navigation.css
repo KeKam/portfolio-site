@@ -23,3 +23,18 @@
   color: black !important;
 }
 
+.is-current {
+  text-decoration: underline !important;
+}
+
+.nav-link {
+  padding: 0 0;
+}
+
+ul.white-font.navbar-nav > li > a {
+  color: white !important;
+}
+
+ul.black-font.navbar-nav > li > a {
+  color: black !important;
+}

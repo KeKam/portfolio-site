@@ -4,11 +4,10 @@ import {
   Navbar,
   NavbarToggler,
   NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
+  NavItem
   } from 'reactstrap';
 import Scrollspy from 'react-scrollspy';
+import Scrollschor from 'react-scrollchor';
 import './Navigation.css';
 
 class Navigation extends Component {
@@ -61,24 +60,24 @@ class Navigation extends Component {
               navbar
             >
               <NavItem>
-                <NavLink href='#about'>
+                <Scrollschor to='#about' animate={{ duration: 600 }} className='nav-link'>
                   ABOUT ME
-                </NavLink>
+                </Scrollschor>
               </NavItem>
               <NavItem>
-                <NavLink href='#skillset'>
+                <Scrollschor to='#skillset' animate={{ duration: 600 }} className='nav-link'>
                   SKILLSET
-                </NavLink>
+                </Scrollschor>
               </NavItem>
               <NavItem>
-                <NavLink href='#projects'>
+                <Scrollschor to='#projects' animate={{ duration: 600 }} className='nav-link'>
                   PROJECTS
-                </NavLink>
+                </Scrollschor>
               </NavItem>
               <NavItem>
-                <NavLink href='#contact'>
+                <Scrollschor to='#contact' animate={{ duration: 600 }} className='nav-link'>
                   CONTACT
-                </NavLink>
+                </Scrollschor>
               </NavItem>
             </Scrollspy>
           </Collapse>

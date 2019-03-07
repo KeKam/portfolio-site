@@ -1,8 +1,8 @@
 [
   {
     "name": "Facialify",
-    "description": "This is facialify.",
-    "img": "",
-    "url": ""
+    "description": "An app that can detect faces in your pictures.",
+    "img": "facialify.png",
+    "url": "https://facialify-app.herokuapp.com/"
   }
 ]

@@ -7,16 +7,38 @@ import Projects from '../components/Projects/Projects';
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 
-const HomePage = () => {
+const HomePage = ({ data }) => {
+  const { edges: projectImageData } = data.projectImages;
   return (
     <div>
       <Navigation />
       <Banner />
       <About />
       <Skillset />
-      <Projects />
+      <Projects projectImages={projectImageData} />
     </div>
   );
 }
+
+export const query = graphql`
+  query allImagesQuery {
+    projectImages: allFile(
+      sort: { order: ASC, fields: [absolutePath] }
+      filter: { relativePath: { regex: "/projects/.*.png/" } }
+    ) {
+      edges {
+        node {
+          relativePath
+          name
+          childImageSharp {
+            sizes(maxWidth: 320) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
+      }
+    }
+  }
+`
 
 export default HomePage;

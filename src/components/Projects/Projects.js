@@ -13,7 +13,7 @@ const Projects = (props) => {
             const image = props.projectImages.find(n => {
               return n.node.relativePath === `projects/${project.img}`;
             });
-            const imageSizes = image.node.childImageSharp.sizes;
+            const imageFluid = image.node.childImageSharp.fluid;
             return (
               <a
                 href={project.url}
@@ -26,7 +26,7 @@ const Projects = (props) => {
                   <Img 
                     title={project.name}
                     alt='Screenshot of the project'
-                    sizes={imageSizes}
+                    fluid={imageFluid}
                     className='project-img center-block'
                   />
                 </div>

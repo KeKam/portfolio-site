@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Github",
+    "icon": "github",
+    "url": "https://github.com/KeKam"
+  },
+  {
+    "name": "Linkedin",
+    "icon": "linkedin",
+    "url": "https://www.linkedin.com/in/kentakamimura"
+  },
+  {
+    "name": "Email",
+    "icon": "envelope",
+    "url": "mailto:kenta.stolt.kamimura@gmail.com"
+  }
+]

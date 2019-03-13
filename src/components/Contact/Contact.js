@@ -7,7 +7,7 @@ const Contact = () => {
       <h2 className='text-center'>CONTACT</h2>
       <div className='section-content'>
         {contactData.map(contact => (
-          <div className="">
+          <div className="" key={contact.url}>
             <a
               href={contact.url}
               target="_blank"

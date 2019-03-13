@@ -14,7 +14,7 @@ const HomePage = ({ data }) => {
   return (
     <div>
       <Navigation />
-      <Banner />
+      <Banner bannerImg={data.bannerImg} />
       <About />
       <Skillset />
       <Projects projectImages={projectImageData} />
@@ -25,6 +25,15 @@ const HomePage = ({ data }) => {
 
 export const query = graphql`
   query allImagesQuery {
+
+    bannerImg: file(relativePath: { eq: "line.jpg" }) {
+      childImageSharp {
+        fluid(quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
     projectImages: allFile(
       sort: { order: ASC, fields: [absolutePath] }
       filter: { relativePath: { regex: "/projects/.*.png/" } }

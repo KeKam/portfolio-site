@@ -26,7 +26,7 @@ const HomePage = ({ data }) => {
 export const query = graphql`
   query allImagesQuery {
 
-    bannerImg: file(relativePath: { eq: "line.jpg" }) {
+    bannerImg: file(relativePath: { eq: "workspace.jpg" }) {
       childImageSharp {
         fluid(quality: 100) {
           ...GatsbyImageSharpFluid

@@ -3,14 +3,14 @@ import Img from 'gatsby-image';
 import projectData from '../../data/projects.json';
 import './Projects.css';
 
-const Projects = (props) => {
+const Projects = ({ projectImages }) => {
   return (
     <section id='projects' className='section'>
       <h2 className='text-center'>PROJECTS</h2>
       <div className='section-content'>
         <div className='project-showcase'>
           {projectData.map(project => {
-            const image = props.projectImages.find(n => {
+            const image = projectImages.find(n => {
               return n.node.relativePath === `projects/${project.img}`;
             });
             const imageFluid = image.node.childImageSharp.fluid;

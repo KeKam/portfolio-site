@@ -1,0 +1,10 @@
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logo-item {
+  width: 5em;
+  margin: 0.5em;
+}

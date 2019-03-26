@@ -1,4 +1,5 @@
 import React from 'react';
+import Toolbox from '../Toolbox/Toolbox';
 
 const About = () => {
   return (
@@ -15,7 +16,7 @@ const About = () => {
           nec convallis tellus. Maecenas ut efficitur nunc,
         </p>
         <div>
-          <h3>Placeholder</h3> 
+          <h3>Placeholder</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Nam at laoreet velit, sed dignissim turpis. Nunc tempor,
@@ -25,6 +26,7 @@ const About = () => {
             nec convallis tellus. Maecenas ut efficitur nunc,
           </p>
         </div>
+        <Toolbox />
       </div>
     </section>
   );

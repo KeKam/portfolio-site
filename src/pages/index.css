@@ -17,8 +17,7 @@ p {
 }
 
 .section {
-  height: 100vh;
-  padding-top: 20%;
+  padding-top: 15%;
   padding-bottom: 20%;
 }
 
@@ -30,6 +29,8 @@ p {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+
 
 .row {
   margin: auto;

@@ -3,8 +3,9 @@ import './Toolbox.css';
 
 const Toolbox = () => {
   return (
-    <div>
-      <h2 className='text-center'>TOOLBOX</h2>
+    <section>
+      <h2>TOOLBOX</h2>
+      <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
       <div className='logos'>
         <div className='logo-item'>
           <svg viewBox="0 0 128 128">
@@ -72,7 +73,7 @@ const Toolbox = () => {
           </svg>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -7,7 +7,9 @@ const Projects = ({ projectImages }) => {
   return (
     <section id='projects' className='section'>
       <h2 className='text-center'>PROJECTS</h2>
+      <h3 className='text-center'>Below you can find some of my projects that I've been working on.</h3>
       <div className='section-content'>
+      <hr className='hr-sections' />
         <div className='project-showcase'>
           {projectData.map(project => {
             const image = projectImages.find(n => {
@@ -33,6 +35,20 @@ const Projects = ({ projectImages }) => {
                 <div className='project-info'>
                   <h3>{project.name}</h3>
                   <h4>{project.description}</h4>
+                  <h6>
+                    <a 
+                    href={project.github} 
+                    className='project-github'
+                    target='_blank' 
+                    rel='noopener noreferrer'
+                    >
+                    <i
+                      className='fa fa-github fa-lg'
+                      alt='Github icon'
+                    />
+                      GitHub
+                    </a>
+                  </h6>
                 </div>
               </a>
             );

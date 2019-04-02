@@ -15,7 +15,9 @@ const HomePage = ({ data }) => {
       <Navigation />
       <Banner bannerImg={data.bannerImg} />
       <About />
+      <hr className='hr-divider' />
       <Projects projectImages={projectImageData} />
+      <hr className='hr-divider' />
       <Contact />
     </div>
   );

@@ -31,8 +31,8 @@ const Projects = ({ projectImages }) => {
                   />
                 </div>
                 <div className='project-info'>
-                  <h4>{project.name}</h4>
-                  <p>{project.description}</p>
+                  <h3>{project.name}</h3>
+                  <h4>{project.description}</h4>
                 </div>
               </a>
             );

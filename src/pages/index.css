@@ -5,15 +5,9 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: white;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.897);
   font-family: 'Roboto Slab', serif, sans-serif;
-}
-
-p {
-  font-size: 15px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  line-height: 2em;
 }
 
 h2 {
@@ -31,6 +25,15 @@ h3 {
   font-size: 1.17em;
   margin-block-start: 1em;
   margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+h4 {
+  display: block;
+  font-size: 0.74em;
+  margin-block-start: 1.17em;
+  margin-block-end: 1.17em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
@@ -55,8 +58,20 @@ h3 {
   margin-block-end: 0.5em;
   margin-inline-start: auto;
   margin-inline-end: auto;
-  border-style: inset;
-  border-width: 1px;
+  border: 0;
+  height: 3px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 255, 255), rgba(0, 0, 0, 0));
+}
+
+.hr-divider {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  border: 0;
+  height: 5px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 255, 255), rgba(0, 0, 0, 0));
 }
 
 .row {

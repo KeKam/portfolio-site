@@ -1,0 +1,36 @@
+/* #contact {
+  max-width: 1100px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+} */
+
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-item {
+  width: 4.5em;
+  margin: 2.5em;
+  text-align: center;
+}
+
+.contact-link {
+  color: white;
+  text-decoration: none !important;
+}
+
+.contact-list {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  padding-top: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.contact-link:hover {
+  color: grey;
+}

@@ -38,6 +38,7 @@ i {
   padding: 1em;
   width: 100%;
   height: 50%;
+  top: -40%;
 }
 
 .project-showcase {
@@ -56,7 +57,7 @@ i {
   color: white;
   text-decoration: none !important;
   position: absolute;
-  top: 80%;
+  top: 60%;
   left: 60%;
 }
 

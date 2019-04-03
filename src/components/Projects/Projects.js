@@ -17,27 +17,28 @@ const Projects = ({ projectImages }) => {
             });
             const imageFluid = image.node.childImageSharp.fluid;
             return (
-              <a
-                href={project.url}
-                key={project.url}
-                className='project'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <div className='project-img-container'>
-                  <Img 
-                    title={project.name}
-                    alt='Screenshot of the project'
-                    fluid={imageFluid}
-                    className='project-img center-block'
-                  />
-                </div>
+              <div key={project.url}>
+                <a
+                  href={project.url}
+                  className='project'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <div className='project-img-container'>
+                    <Img 
+                      title={project.name}
+                      alt='Screenshot of the project'
+                      fluid={imageFluid}
+                      className='project-img center-block'
+                    />
+                  </div>
+                </a>
                 <div className='project-info'>
                   <h3>{project.name}</h3>
                   <h4>{project.description}</h4>
                   <h6>
                     <a 
-                    href={project.github} 
+                    href={project.github}
                     className='project-github'
                     target='_blank' 
                     rel='noopener noreferrer'
@@ -50,7 +51,7 @@ const Projects = ({ projectImages }) => {
                     </a>
                   </h6>
                 </div>
-              </a>
+              </div>
             );
           })}
         </div>

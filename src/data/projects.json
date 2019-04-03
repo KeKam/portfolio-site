@@ -4,6 +4,6 @@
     "description": "An app that can detect faces in your pictures.",
     "img": "facialify.png",
     "url": "https://facialify-app.herokuapp.com/",
-    "github": "https://github.com/KeKam/portfolio-site"
+    "github": "https://github.com/KeKam/face-recognition-app"
   }
 ]

@@ -43,30 +43,26 @@ class Navigation extends Component {
 
   render() {
     const { hasScrolledDown } = this.state;
-    const backgroundColor = hasScrolledDown ? 'black-background' : '';
-    const navFontColor = hasScrolledDown ? 'white-font' : 'black-font';
+    const backgroundColor = hasScrolledDown ? 'grey-transparent-background' : '';
     return (
       <div>
         <Navbar className={backgroundColor} fixed={'top'} light expand='md'>
-          <NavbarBrand className={navFontColor} href='/'>
+          <NavbarBrand className='white-font' href='/'>
             KENTA KAMIMURA
           </NavbarBrand>
-          <NavbarToggler className={navFontColor} onClick={this.toggle} />
+          <NavbarToggler className='white-font' onClick={this.toggle}>
+            <i className='fa fa-bars fa-lg white-font' />
+          </NavbarToggler>
           <Collapse isOpen={this.state.isOpen} navbar>
             <Scrollspy 
-              items={ ['about', 'skillset', 'projects', 'contact'] }
+              items={ ['about', 'projects', 'contact'] }
               currentClassName='is-current'
-              className={`${navFontColor} ml-auto navbar-nav`} 
+              className='white-font ml-auto navbar-nav'
               navbar
             >
               <NavItem>
                 <Scrollschor to='#about' animate={{ duration: 600 }} className='nav-link'>
                   ABOUT ME
-                </Scrollschor>
-              </NavItem>
-              <NavItem>
-                <Scrollschor to='#skillset' animate={{ duration: 600 }} className='nav-link'>
-                  SKILLSET
                 </Scrollschor>
               </NavItem>
               <NavItem>

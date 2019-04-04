@@ -1,40 +1,42 @@
-.navbar {
-  background-color: transparent;
-  font-size: 16px;
-  font-weight: 500;
-  padding: 10px;
-  transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  border-bottom: none;
-}
-
-.black-background {
-  background-color: black !important;
-}
-
-.white-font {
-  color: white !important;
-}
-
-.black-font {
-  color: black !important;
-}
-
-.is-current {
-  text-decoration: underline !important;
-}
-
-.nav-link {
-  padding: 0 0;
-}
-
 ul.white-font.navbar-nav > li > a {
   color: white !important;
 }
 
 ul.black-font.navbar-nav > li > a {
   color: black !important;
+}
+
+button:focus {
+  outline: 1px none !important;
+}
+
+.navbar {
+  background-color: transparent;
+  font-size: 1em;
+  font-weight: 500;
+  transition: all 1s ease;
+}
+
+.grey-transparent-background {
+  background-color: rgba(77, 77, 77, 0.897);
+}
+
+.white-font {
+  color: white !important;
+}
+
+.is-current {
+  text-decoration: underline !important;
+}  
+
+.nav-link:hover {
+  font-weight: 900;
+}
+
+.navbar-toggler {
+  border-color: transparent !important;
+}
+
+.navbar-brand:hover {
+  font-weight: 900;
 }

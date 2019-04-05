@@ -1,4 +1,9 @@
 module.exports = {
+  siteMetadata: {
+    title: 'Kenta Kamimura || Portfolio',
+    description: 'Self-taught web developer',
+    siteUrl: 'https://www.kentakamimura.com',
+  },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -16,5 +21,6 @@ module.exports = {
     },  
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`
   ]
 }

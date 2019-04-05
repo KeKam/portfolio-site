@@ -4,14 +4,21 @@ import Banner from '../components/Banner/Banner';
 import Contact from '../components/Contact/Contact';
 import Navigation from '../components/Navigation/Navigation';
 import Projects from '../components/Projects/Projects';
+import  { Helmet } from 'react-helmet';
 import 'bootstrap/dist/css/bootstrap.css';
 import "font-awesome/css/font-awesome.min.css";
 import './index.css';
 
 const HomePage = ({ data }) => {
   const { edges: projectImageData } = data.projectImages;
+  const siteTitle = data.site.siteMetadata.title;
+  const metaDescription = data.site.siteMetadata.description;
   return (
     <div>
+      <Helmet>
+        <title>{siteTitle}</title>
+        <meta name='description' content={metaDescription}></meta>
+      </Helmet>
       <Navigation />
       <Banner bannerImg={data.bannerImg} />
       <About />
@@ -25,6 +32,12 @@ const HomePage = ({ data }) => {
 
 export const query = graphql`
   query allImagesQuery {
+    site {
+      siteMetadata {
+        title
+        description
+      }
+    }
 
     bannerImg: file(relativePath: { eq: "workspace.jpg" }) {
       childImageSharp {

@@ -7,7 +7,7 @@ const Contact = () => {
     <section id='contact' className='section'>
       <h2 className='text-center'>CONTACT</h2>
       <h3 className='text-center'>Have any questions? Feel free to contact me!</h3>
-      <div className='contact-list'>
+      <div className='section-content'>
         <hr className='hr-sections' />
         <div className='contacts'>
           {contactData.map(contact => (

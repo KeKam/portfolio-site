@@ -7,6 +7,7 @@ import Projects from '../components/Projects/Projects';
 import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
 import 'bootstrap/dist/css/bootstrap.css';
+import favicon from '../../static/favicon.ico';
 import "font-awesome/css/font-awesome.min.css";
 import './index.css';
 
@@ -18,7 +19,8 @@ const HomePage = ({ data }) => {
     <div>
       <Helmet>
         <title>{siteTitle}</title>
-        <meta name='description' content={metaDescription}></meta>
+        <meta name='description' content={metaDescription} />
+        <link rel='icon' href={favicon} />
       </Helmet>
       <Navigation />
       <Banner bannerImg={data.bannerImg} />

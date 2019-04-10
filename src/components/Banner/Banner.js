@@ -18,7 +18,7 @@ const Banner = ({ bannerImg }) =>
     <p className='banner-text'>WEB DEVELOPER</p>
   </div>
   <div className='arrow-container'>
-    <Scrollschor to='#about' animate={{ duration: 600 }} className='arrow-button'>
+    <Scrollschor to='#about' aria-label='Jump to about section' animate={{ duration: 600 }} className='arrow-button'>
       <i className='fa fa-angle-double-down'/>
     </Scrollschor>
   </div>

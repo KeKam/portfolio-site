@@ -50,7 +50,7 @@ class Navigation extends Component {
           <NavbarBrand className='white-font' href='/'>
             KENTA KAMIMURA
           </NavbarBrand>
-          <NavbarToggler className='white-font' onClick={this.toggle}>
+          <NavbarToggler className='white-font' onClick={this.toggle} aria-label='Open menu'>
             <i className='fa fa-bars fa-lg white-font' />
           </NavbarToggler>
           <Collapse isOpen={this.state.isOpen} navbar>

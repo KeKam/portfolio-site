@@ -6,7 +6,7 @@ import './Projects.css';
 const Projects = ({ projectImages }) => {
   return (
     <section id='projects' className='section'>
-      <h2 className='text-center'>PROJECTS</h2>
+      <h2 className='text-center'>Projects</h2>
       <h3 className='text-center'>Below you can find some of my projects that I've been working on.</h3>
       <div className='section-content'>
       <hr className='hr-sections' />

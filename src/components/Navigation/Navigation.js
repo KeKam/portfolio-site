@@ -48,7 +48,7 @@ class Navigation extends Component {
       <div>
         <Navbar className={backgroundColor} fixed={'top'} light expand='md'>
           <NavbarBrand className='white-font' href='/'>
-            KENTA KAMIMURA
+            Kenta Kamimura
           </NavbarBrand>
           <NavbarToggler className='white-font' onClick={this.toggle} aria-label='Open menu'>
             <i className='fa fa-bars fa-lg white-font' />
@@ -62,17 +62,17 @@ class Navigation extends Component {
             >
               <NavItem>
                 <Scrollschor to='#about' animate={{ duration: 600 }} className='nav-link'>
-                  ABOUT ME
+                  About
                 </Scrollschor>
               </NavItem>
               <NavItem>
                 <Scrollschor to='#projects' animate={{ duration: 600 }} className='nav-link'>
-                  PROJECTS
+                  Projects
                 </Scrollschor>
               </NavItem>
               <NavItem>
                 <Scrollschor to='#contact' animate={{ duration: 600 }} className='nav-link'>
-                  CONTACT
+                  Contact
                 </Scrollschor>
               </NavItem>
             </Scrollspy>

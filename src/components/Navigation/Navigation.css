@@ -2,6 +2,11 @@ ul.white-font.navbar-nav > li > a {
   color: white !important;
 }
 
+ul.white-font.navbar-nav > li > a:hover {
+  color: grey !important;
+  transition: all 0.5s ease;
+}
+
 ul.black-font.navbar-nav > li > a {
   color: black !important;
 }
@@ -18,7 +23,7 @@ button:focus {
 }
 
 .grey-transparent-background {
-  background-color: rgba(77, 77, 77, 0.897);
+  background-color: rgba(48, 48, 48, 0.973);
 }
 
 .white-font {
@@ -26,17 +31,15 @@ button:focus {
 }
 
 .is-current {
-  text-decoration: underline !important;
+  font-weight: 900;
+  color: grey !important;
+  /* text-decoration: underline !important; */
 }  
 
-.nav-link:hover {
-  font-weight: 900;
+.nav-link {
+  font-size: 1.2em;
 }
 
 .navbar-toggler {
   border-color: transparent !important;
-}
-
-.navbar-brand:hover {
-  font-weight: 900;
 }

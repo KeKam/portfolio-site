@@ -14,9 +14,9 @@ const Banner = ({ bannerImg }) => {
       />
       <div className='overlay' />
       <div className='center'>
-        <h1 className='banner-header'>KENTA KAMIMURA</h1>
-        <hr className='hr-line'/>
-        <p className='banner-text'>WEB DEVELOPER</p>
+        <h1 className='banner-header'>Kenta Kamimura</h1>
+        <hr className='hr-sections'/>
+        <p className='banner-text'>Web Developer</p>
       </div>
       <div className='arrow-container'>
         <Scrollschor to='#about' aria-label='Jump to about section' animate={{ duration: 600 }} className='arrow-button'>

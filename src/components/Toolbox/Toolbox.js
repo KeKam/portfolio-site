@@ -4,7 +4,7 @@ import './Toolbox.css';
 const Toolbox = () => {
   return (
     <section>
-      <h2>TOOLBOX</h2>
+      <h2>Toolbox</h2>
       <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
       <div className='logos'>
         <div className='logo-item'>

@@ -6,9 +6,9 @@ import './Projects.css';
 const Projects = ({ projectImages }) => {
   return (
     <section id='projects' className='section'>
+      <div className='section-content'>
       <h2 className='text-center'>Projects</h2>
       <h3 className='text-center'>Below you can find some of my projects that I've been working on.</h3>
-      <div className='section-content'>
       <hr className='hr-sections' />
         <div className='project-showcase'>
           {projectData.map(project => {
@@ -34,8 +34,8 @@ const Projects = ({ projectImages }) => {
                   </div>
                 </a>
                 <div className='project-info'>
-                  <h3>{project.name}</h3>
-                  <h4>{project.description}</h4>
+                  <h3 className='project-name'>{project.name}</h3>
+                  <h4 className='project-description'>{project.description}</h4>
                   <h6>
                     <a 
                     href={project.github}

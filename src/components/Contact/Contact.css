@@ -1,5 +1,6 @@
 #contact {
-  padding-bottom: 22%;
+  padding-top: 18%;
+  padding-bottom: 20%;
 }
 
 .contacts {
@@ -10,7 +11,7 @@
 
 .contact-item {
   width: 4.5em;
-  margin: 2.5em;
+  margin: 1em;
   text-align: center;
 }
 
@@ -21,4 +22,12 @@
 
 .contact-link:hover {
   color: grey;
+}
+
+.fa {
+  margin: 0;
+}
+
+.icon-text {
+  margin: 0;
 }

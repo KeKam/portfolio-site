@@ -5,9 +5,9 @@ import './Contact.css';
 const Contact = () => {
   return (
     <section id='contact' className='section'>
-      <h2 className='text-center'>Contact</h2>
-      <h3 className='text-center'>Have any questions? Feel free to contact me!</h3>
       <div className='section-content'>
+        <h2 className='text-center'>Contact</h2>
+        <h3 className='text-center'>Have any questions? Feel free to contact me!</h3>
         <hr className='hr-sections' />
         <div className='contacts'>
           {contactData.map(contact => (
@@ -23,7 +23,7 @@ const Contact = () => {
                   className={`fa fa-${contact.icon} fa-2x`}
                   alt={`Link to my ${contact.name} account`}
                 />
-                <h3>{contact.name}</h3>
+                <h3 className='icon-text'>{contact.name}</h3>
               </a>
             </div>
           ))} 

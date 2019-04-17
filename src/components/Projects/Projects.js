@@ -44,7 +44,7 @@ const Projects = ({ projectImages }) => {
                     rel='noopener noreferrer'
                     >
                     <i
-                      className='fa fa-github fa-lg'
+                      className='fa fa-github fa-lg github-icon'
                       alt='Github icon'
                     />
                       GitHub

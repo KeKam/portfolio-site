@@ -17,10 +17,9 @@ const Projects = ({ projectImages }) => {
             });
             const imageFluid = image.node.childImageSharp.fluid;
             return (
-              <div key={project.url}>
+              <div className='project' key={project.url}>
                 <a
                   href={project.url}
-                  className='project'
                   target='_blank'
                   rel='noopener noreferrer'
                 >

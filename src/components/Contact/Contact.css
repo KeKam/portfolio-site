@@ -17,11 +17,6 @@
 
 .contact-link {
   color: white;
-  text-decoration: none !important;
-}
-
-.contact-link:hover {
-  color: grey;
 }
 
 .icon-text {

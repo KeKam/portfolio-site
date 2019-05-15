@@ -7,10 +7,6 @@ ul.white-font.navbar-nav > li > a:hover {
   transition: all 0.5s ease;
 }
 
-ul.black-font.navbar-nav > li > a {
-  color: black !important;
-}
-
 button:focus {
   outline: 1px none !important;
 }
@@ -33,7 +29,6 @@ button:focus {
 .is-current {
   font-weight: 900;
   color: grey !important;
-  /* text-decoration: underline !important; */
 }  
 
 .nav-link {
@@ -42,4 +37,9 @@ button:focus {
 
 .navbar-toggler {
   border-color: transparent !important;
+}
+
+.navbar-brand:hover {
+  color: grey !important;
+  transition: all 0.5s ease;
 }

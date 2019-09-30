@@ -6,9 +6,8 @@ import NavBar from '../components/NavBar/NavBar';
 import Projects from '../components/Projects/Projects';
 import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
-import 'bootstrap/dist/css/bootstrap.css';
+import 'normalize.css';
 import favicon from '../../static/favicon.ico';
-import "font-awesome/css/font-awesome.min.css";
 import './index.css';
 
 const HomePage = ({ data }) => {

@@ -1,29 +1,32 @@
 import React from 'react';
-import Img from 'gatsby-image';
-import Scrollschor from 'react-scrollchor';
-import './Banner.css';
+import { Banner as S } from './Banner.styled';
+import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
 
 const Banner = ({ bannerImg }) => {
   return (
-    <div className='banner'>
-      <Img
-        title='Banner image'
-        alt='Image of a laptop'
-        fluid={bannerImg.childImageSharp.fluid}
-        className='banner-img'
-      />
-      <div className='overlay' />
-      <div className='center'>
-        <h1 className='banner-header'>Kenta Kamimura</h1>
-        <hr className='hr-sections'/>
-        <p className='banner-text'>Web Developer</p>
-      </div>
-      <div className='arrow-container'>
-        <Scrollschor to='#about' aria-label='Jump to about section' animate={{ duration: 600 }} className='arrow-button'>
-          <i className='fa fa-angle-double-down'/>
-        </Scrollschor>
-      </div>
-    </div>
+    <S.Wrapper>
+      <S.Overlay>
+        <S.Image
+          title='Banner image'
+          alt='Image of a laptop'
+          fluid={bannerImg.childImageSharp.fluid}
+        />
+      </S.Overlay>
+      <S.Header>
+        <S.Title>
+          Kenta Kamimura
+        </S.Title>
+        <S.Line />
+        <S.SubTitle>
+          Web Developer
+        </S.SubTitle>
+      </S.Header>
+      <S.ArrowContainer>
+        <S.Link to='#about' aria-label='Jump to about section' animate={{ duration: 600 }} className='arrow-button'>
+          <S.Arrow icon={faAngleDoubleDown}/>
+        </S.Link>
+      </S.ArrowContainer>
+    </S.Wrapper>
   );
 }
 

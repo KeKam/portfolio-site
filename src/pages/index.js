@@ -2,7 +2,7 @@ import React from "react"
 import About from '../components/About/About';
 import Banner from '../components/Banner/Banner';
 import Contact from '../components/Contact/Contact';
-import Navigation from '../components/Navigation/Navigation';
+import NavBar from '../components/NavBar/NavBar';
 import Projects from '../components/Projects/Projects';
 import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
@@ -16,13 +16,13 @@ const HomePage = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title;
   const metaDescription = data.site.siteMetadata.description;
   return (
-    <div>
+    <div id='home'>
       <Helmet>
         <title>{siteTitle}</title>
         <meta name='description' content={metaDescription} />
         <link rel='icon' href={favicon} />
       </Helmet>
-      <Navigation />
+      <NavBar />
       <Banner bannerImg={data.bannerImg} />
       <About />
       <hr className='hr-divider' />

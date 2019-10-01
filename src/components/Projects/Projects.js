@@ -1,61 +1,67 @@
 import React from 'react';
-import Img from 'gatsby-image';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import projectData from '../../data/projects.json';
-import './Projects.css';
+import { SharedStyles as SS } from '../SharedStyles/SharedStyles';
+import { Projects as S } from './Projects.styled';
 
 const Projects = ({ projectImages }) => {
   return (
-    <section id='projects' className='section'>
-      <div className='section-content'>
-      <h2 className='text-center'>Projects</h2>
-      <h3 className='text-center'>Below you can find some of my projects that I've been working on.</h3>
-      <hr className='hr-sections' />
-        <div className='project-showcase'>
+    <SS.Section id='projects'>
+      <SS.SectionContent>
+      <S.Title>
+        Projects
+      </S.Title>
+      <S.Text>
+        Below you can find some of my projects that I've been working on.
+      </S.Text>
+      <SS.Line />
+        <S.Showcase>
           {projectData.map(project => {
             const image = projectImages.find(n => {
               return n.node.relativePath === `projects/${project.img}`;
             });
             const imageFluid = image.node.childImageSharp.fluid;
             return (
-              <div className='project' key={project.url}>
+              <S.Item key={project.url}>
                 <a
                   href={project.url}
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  <div className='project-img-container'>
-                    <Img 
+                  <S.ImageContainer>
+                    <S.Image 
                       title={project.name}
                       alt='Screenshot of the project'
                       fluid={imageFluid}
-                      className='project-img center-block'
                     />
-                  </div>
+                  </S.ImageContainer>
                 </a>
-                <div className='project-info'>
-                  <h3 className='project-name'>{project.name}</h3>
-                  <h4 className='project-description'>{project.description}</h4>
-                  <h6>
-                    <a 
-                    href={project.github}
-                    className='project-github'
-                    target='_blank' 
-                    rel='noopener noreferrer'
+                <S.InfoContainer>
+                  <S.Name>
+                    {project.name}
+                  </S.Name>
+                  <S.Description>
+                    {project.description}
+                  </S.Description>
+                  <S.GitHubContainer>
+                    <a
+                      href={project.github}
+                      target='_blank' 
+                      rel='noopener noreferrer'
                     >
-                    <i
-                      className='fa fa-github fa-lg github-icon'
-                      alt='Github icon'
-                    />
-                      GitHub
+                      <S.GitHub
+                        icon={faGithub}
+                        alt='Github link'
+                      />
                     </a>
-                  </h6>
-                </div>
-              </div>
+                  </S.GitHubContainer>
+                </S.InfoContainer>
+              </S.Item>
             );
           })}
-        </div>
-      </div>
-    </section>
+        </S.Showcase>
+      </SS.SectionContent>
+    </SS.Section>
   );
 }
 

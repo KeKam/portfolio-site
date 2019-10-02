@@ -84,5 +84,6 @@ Banner.Arrow = styled(FontAwesomeIcon)`
 
   &:hover {
     color: grey;
+    transform: scale(1.2);
   }
 `;

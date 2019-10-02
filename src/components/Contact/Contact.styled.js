@@ -46,6 +46,7 @@ Contact.Item = styled.div`
 Contact.Link = styled.a`
   color: white;
   text-decoration: none;
+  transition: all 0.5s ease;
 
   &:hover {
     color: grey;

@@ -1,17 +1,18 @@
-import React from "react"
+import React from 'react'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { fas} from '@fortawesome/free-solid-svg-icons'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { Helmet } from 'react-helmet';
+import { graphql } from 'gatsby';
 import About from '../components/About/About';
 import Banner from '../components/Banner/Banner';
 import Contact from '../components/Contact/Contact';
 import NavBar from '../components/NavBar/NavBar';
 import Projects from '../components/Projects/Projects';
-import { Helmet } from 'react-helmet';
-import { graphql } from 'gatsby';
-import 'normalize.css';
 import favicon from '../../static/favicon.ico';
-import './index.css';
+import { HomePage as S } from './index.styled';
+import 'normalize.css';
+
 
 const HomePage = ({ data }) => {
   const { edges: projectImageData } = data.projectImages;
@@ -19,6 +20,7 @@ const HomePage = ({ data }) => {
   const metaDescription = data.site.siteMetadata.description;
   return (
     <div id='home'>
+      <S.GlobalStyle />
       <Helmet>
         <title>{siteTitle}</title>
         <meta name='description' content={metaDescription} />
@@ -27,9 +29,9 @@ const HomePage = ({ data }) => {
       <NavBar />
       <Banner bannerImg={data.bannerImg} />
       <About />
-      <hr className='hr-divider' />
+      <S.Line />
       <Projects projectImages={projectImageData} />
-      <hr className='hr-divider' />
+      <S.Line />
       <Contact />
     </div>
   );

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Banner as S } from './Banner.styled';
-import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
 
 const Banner = ({ bannerImg }) => {
   return (
@@ -23,7 +22,7 @@ const Banner = ({ bannerImg }) => {
       </S.Header>
       <S.ArrowContainer>
         <S.Link to='#about' aria-label='Jump to about section' animate={{ duration: 600 }} className='arrow-button'>
-          <S.Arrow icon={faAngleDoubleDown}/>
+          <S.Arrow icon={['fas', 'angle-double-down']}/>
         </S.Link>
       </S.ArrowContainer>
     </S.Wrapper>

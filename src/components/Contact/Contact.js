@@ -1,35 +1,41 @@
 import React from 'react';
 import contactData from '../../data/contacts.json';
-import './Contact.css';
+import { SharedStyles as SS } from '../SharedStyles/SharedStyles';
+import { Contact as S } from './Contact.styled';
 
 const Contact = () => {
   return (
-    <section id='contact' className='section'>
-      <div className='section-content'>
-        <h2 className='text-center'>Contact</h2>
-        <h3 className='text-center'>Have any questions? Feel free to contact me!</h3>
-        <hr className='hr-sections' />
-        <div className='contacts'>
+    <SS.Section id='contact'>
+      <SS.SectionContent>
+        <S.Title>
+          Contact
+        </S.Title>
+        <S.Text>
+          Have any questions? Feel free to contact me!
+        </S.Text>
+        <S.Line />
+        <S.ContactContainer>
           {contactData.map(contact => (
-            <div className='contact-item' key={contact.url}>
-              <a
+            <S.Item key={contact.url}>
+              <S.Link
                 href={contact.url}
                 target="_blank"
                 title={`Link to my ${contact.name} account`}
-                className='contact-link'
                 rel="noopener noreferrer"
               >
-                <i
-                  className={`fa fa-${contact.icon} fa-2x`}
+                <S.ContactIcon
+                  icon={[`${contact.prefix}`, `${contact.icon}`]}
                   alt={`Link to my ${contact.name} account`}
                 />
-                <h3 className='icon-text'>{contact.name}</h3>
-              </a>
-            </div>
+                <S.IconText>
+                  {contact.name}
+                </S.IconText>
+              </S.Link>
+            </S.Item>
           ))} 
-        </div>
-      </div>
-    </section>
+        </S.ContactContainer>
+      </SS.SectionContent>
+    </SS.Section>
   );
 }
 

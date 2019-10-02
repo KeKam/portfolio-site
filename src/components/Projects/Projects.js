@@ -1,5 +1,4 @@
 import React from 'react';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import projectData from '../../data/projects.json';
 import { SharedStyles as SS } from '../SharedStyles/SharedStyles';
 import { Projects as S } from './Projects.styled';
@@ -50,7 +49,7 @@ const Projects = ({ projectImages }) => {
                       rel='noopener noreferrer'
                     >
                       <S.GitHub
-                        icon={faGithub}
+                        icon={['fab', 'github']}
                         alt='Github link'
                       />
                     </a>

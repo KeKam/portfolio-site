@@ -1,4 +1,7 @@
 import React from "react"
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { fas} from '@fortawesome/free-solid-svg-icons'
 import About from '../components/About/About';
 import Banner from '../components/Banner/Banner';
 import Contact from '../components/Contact/Contact';
@@ -31,6 +34,8 @@ const HomePage = ({ data }) => {
     </div>
   );
 }
+
+library.add(fab, fas);
 
 export const query = graphql`
   query allImagesQuery {

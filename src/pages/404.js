@@ -1,12 +1,17 @@
 import React from 'react';
-import './404.css';
+import { NotFound as S } from './404.styled';
 
 const NotFound = () => {
   return (
-    <div className='center'>
-      <h1>Page not found</h1>
-      <p>The page you are looking for does not exist.</p>
-    </div>
+    <S.Wrapper>
+      <S.Title>
+        Page not found
+      </S.Title>
+      <S.Text as='p'>
+        The page you are looking for does not exist.
+        <S.Link to='/#home'>Go back to home</S.Link>
+      </S.Text>
+    </S.Wrapper>
   );
 }
 

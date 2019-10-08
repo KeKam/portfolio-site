@@ -17,6 +17,7 @@ NavBar.List = styled.ul`
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
+  padding: 0;
 `;
 
 NavBar.Item = styled.li`

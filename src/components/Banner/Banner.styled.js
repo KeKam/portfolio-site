@@ -76,7 +76,7 @@ Banner.Link = styled(Scrollschor)`
 
 Banner.Arrow = styled(FontAwesomeIcon)`
   color: white;
-  color: white;
+  margin-bottom: 0.1em;
   font-size: 3.2em;
   padding: 0;
   width: 100%;

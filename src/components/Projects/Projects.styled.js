@@ -42,7 +42,7 @@ Projects.Image = styled(Img)`
   width: 100%;
   height: 100%;
   border-radius: 5px 5px 0 0;
-  transition: all 0.5s ease;
+  transition: all 1.5s ease;
 
   &:hover {
     transform: scale(1.2);
@@ -91,6 +91,5 @@ Projects.GitHub = styled(FontAwesomeIcon)`
   &:hover {
     color: grey;
     transform: scale(1.2);
-    transition: all 0.5s ease;
   }
 `;

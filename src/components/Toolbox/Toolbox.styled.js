@@ -18,7 +18,7 @@ Toolbox.Container = styled.div`
   padding: 2em;
   border-radius: 2em;
   box-sizing: border-box;
-  background-color: rgba(46, 46, 46, 0.247);
+  background-color: rgba(75, 75, 75, 0.08);
 `;
 
 Toolbox.Logo = styled.div`

@@ -2,14 +2,14 @@ module.exports = {
   siteMetadata: {
     title: 'Kenta Kamimura || Portfolio',
     description: 'Self-taught web developer',
-    siteUrl: 'https://www.kentakamimura.com',
+    siteUrl: 'https://www.kentakamimura.dev',
   },
   plugins: [
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Kenta Kamimura`,
-        short_name: `KentaKamimura`,
+        short_name: `Kenta Kamimura`,
         start_url: `/`,
         background_color: `#000000`,
         theme_color: `#000000`,

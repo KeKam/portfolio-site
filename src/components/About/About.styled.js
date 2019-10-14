@@ -11,4 +11,10 @@ About.Title = styled.h2`
 About.Text = styled.h3`
   display: block;
   font-size: 1.17em;
+
+  a {
+    color: grey;
+    text-decoration: none;
+    font-style: italic;
+  }
 `;

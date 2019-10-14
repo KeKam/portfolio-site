@@ -11,12 +11,9 @@ const About = () => {
           About Me
         </S.Title>
         <S.Text>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Nam at laoreet velit, sed dignissim turpis. Nunc tempor,
-          nisi at eleifend suscipit, justo ante euismod purus,
-          ac laoreet libero lectus ut mi. Curabitur quis sapien a purus bibendum posuere nec eu quam.
-          Sed cursus facilisis eros et faucibus. Proin in lacinia nulla
-          nec convallis tellus. Maecenas ut efficitur nunc,
+          My journey as a self-taught developer started in 2018 when I realized that my interest and passion involved programming.
+          During this journey I've been using different online resources such as <a href='https://udemy.com/'>Udemy</a> and <a href='https://frontendmaster.com/'>Frontend Masters</a> to gain knowledge and experience.
+          If I'm not coding I'm always reading about code cause it is the fullfilling feeling of always learning that truely makes programming the choice for me.
         </S.Text>
         <SS.Line />
         <Toolbox />

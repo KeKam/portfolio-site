@@ -11,6 +11,7 @@ About.Title = styled.h2`
 About.Text = styled.h3`
   display: block;
   font-size: 1.17em;
+  line-height: 30px;
 
   a {
     color: grey;

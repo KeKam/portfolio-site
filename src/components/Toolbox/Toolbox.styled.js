@@ -9,6 +9,7 @@ Toolbox.Title = styled.h2`
 
 Toolbox.Text = styled.h3`
   font-size: 1.17em;
+  line-height: 30px;
 `;
 
 Toolbox.Container = styled.div`

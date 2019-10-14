@@ -37,9 +37,13 @@ Banner.Header = styled.div`
 `;
 
 Banner.Title = styled.h1`
-  font-size: 3.2em;
+  font-size: 2.3em;
   font-weight: 900;
   color: white;
+
+  @media (min-width: 45rem) {
+    font-size: 3.2em;
+  }
 `;
 
 Banner.Line = styled.hr`
@@ -54,9 +58,13 @@ Banner.Line = styled.hr`
 `;
 
 Banner.SubTitle = styled.p`
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 900;
   color: white;
+
+  @media (min-width: 45rem) {
+    font-size: 2em;
+  }
 `;
 
 Banner.ArrowContainer = styled.div`
@@ -77,7 +85,7 @@ Banner.Link = styled(Scrollschor)`
 Banner.Arrow = styled(FontAwesomeIcon)`
   color: white;
   margin-bottom: 0.1em;
-  font-size: 3.2em;
+  font-size: 2.5em;
   padding: 0;
   width: 100%;
   transition: all 0.5s ease;
@@ -85,5 +93,9 @@ Banner.Arrow = styled(FontAwesomeIcon)`
   &:hover {
     color: grey;
     transform: scale(1.2);
+  }
+
+  @media (min-width: 45rem) {
+    font-size: 3.2em;
   }
 `;

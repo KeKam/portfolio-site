@@ -3,13 +3,22 @@ import styled from 'styled-components';
 export const Toolbox = () => {};
 
 Toolbox.Title = styled.h2`
-  font-size: 1.6em;
+  font-size: 1.3em;
   font-weight: 900;
+
+  @media (min-width: 45rem) {
+    font-size: 1.6em;
+  }
 `;
 
 Toolbox.Text = styled.h3`
-  font-size: 1.17em;
-  line-height: 30px;
+  font-size: 1em;
+  line-height: 35px;
+
+  @media (min-width: 45rem) {
+    font-size: 1.17em;
+    line-height: 30px;
+  }
 `;
 
 Toolbox.Container = styled.div`
@@ -23,6 +32,11 @@ Toolbox.Container = styled.div`
 `;
 
 Toolbox.Logo = styled.div`
-  width: 4.5em;
-  margin: 0.5em;
+  width: 3.5em;
+  margin: 0.25em;
+
+  @media (min-width: 45rem) {
+    width: 4.5em;
+    margin: 0.5em;
+  }
 `;

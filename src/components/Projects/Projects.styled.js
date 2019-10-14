@@ -6,13 +6,21 @@ export const Projects = () => {};
 
 Projects.Title = styled.h2`
   text-align: center;
-  font-size: 1.6em;
+  font-size: 1.3em;
   font-weight: 900;
+
+  @media (min-width: 45rem) {
+    font-size: 1.6em;
+  }
 `;
 
 Projects.Text = styled.h3`
   text-align: center;
-  font-size: 1.17em;
+  font-size: 1em;
+
+  @media (min-width: 45rem) {
+    font-size: 1.17em;
+  }
 `;
 
 Projects.Showcase = styled.div`

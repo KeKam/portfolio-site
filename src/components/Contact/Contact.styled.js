@@ -4,14 +4,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export const Contact = () => {};
 
 Contact.Title = styled.h2`
-  font-size: 1.6em;
+  font-size: 1.3em;
   font-weight: 900;
   text-align: center;
+
+  @media (min-width: 45rem) {
+    font-size: 1.6m;
+  }
 `;
 
 Contact.Text = styled.h3`
-  font-size: 1.17em;
+  font-size: 1em;
   text-align: center;
+
+  @media (min-width: 45rem) {
+    font-size: 1.17em;
+  }
 `;
 
 Contact.Line = styled.hr`
@@ -32,7 +40,7 @@ Contact.ContactContainer = styled.div`
 `;
 
 Contact.Item = styled.div`
-  width: 4.5em;
+  width: 3.5em;
   margin: 1em;
   text-align: center;
   transition: all 0.5s ease;
@@ -40,6 +48,10 @@ Contact.Item = styled.div`
   &:hover {
     color: grey;
     transform: scale(1.2);
+  }
+
+  @media (min-width: 45rem) {
+    width: 4.5em;
   }
 `;
 
@@ -54,11 +66,19 @@ Contact.Link = styled.a`
 `;
 
 Contact.ContactIcon = styled(FontAwesomeIcon)`
-  font-size: 2em;
+  font-size: 1.5em;
+
+  @media (min-width: 45rem) {
+    font-size: 2em;
+  }
 `;
 
 Contact.IconText = styled(Contact.Text)`
-  font-size: 1.17em;
+  font-size: 1em;
   text-align: center;
   margin: 0;
+
+  @media (min-width: 45rem) {
+    font-size: 1.17em;
+  }
 `;

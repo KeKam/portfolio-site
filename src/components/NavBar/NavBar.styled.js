@@ -21,12 +21,16 @@ NavBar.List = styled.ul`
 `;
 
 NavBar.Item = styled.li`
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 900;
   transition: all 0.5s ease;
 
   &:hover {
     transform: scale(1.2);
+  }
+
+  @media (min-width: 45rem) {
+    font-size: 1.2em;
   }
 `;
 

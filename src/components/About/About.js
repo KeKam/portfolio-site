@@ -3,7 +3,7 @@ import Toolbox from '../Toolbox/Toolbox';
 import { SharedStyles as SS } from '../SharedStyles/SharedStyles';
 import { About as S } from './About.styled';
 
-const About = () => {
+const About = ({ portraitImg }) => {
   return (
     <SS.Section id='about'>
       <SS.SectionContent>

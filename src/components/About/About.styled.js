@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Img from 'gatsby-image';
 
 export const About = () => {};
 
@@ -18,7 +19,7 @@ About.Text = styled.h3`
   line-height: 25px;
 
   a {
-    color: grey;
+    color: #BEBEBE;
     text-decoration: none;
     font-style: italic;
   }
@@ -26,5 +27,23 @@ About.Text = styled.h3`
   @media (min-width: 45rem) {
     font-size: 1.17em;
     line-height: 30px;
+  }
+`;
+
+About.ImageContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+About.Image = styled(Img)`
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  filter: saturate(200%);
+
+  @media (min-width: 45rem) {
+    width: 65%;
+    height: 65%;
+    margin-bottom: 2em;
   }
 `;

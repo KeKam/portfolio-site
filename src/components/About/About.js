@@ -7,13 +7,23 @@ const About = ({ portraitImg }) => {
   return (
     <SS.Section id='about'>
       <SS.SectionContent>
+        <S.ImageContainer>
+          <S.Image 
+            title='About image'
+            alt='Image of Kenta'
+            fluid={portraitImg.childImageSharp.fluid}
+          />
+        </S.ImageContainer>
         <S.Title>
           About Me
         </S.Title>
         <S.Text>
-          My journey as a self-taught developer started in 2018 when I realized that my interest and passion involved programming.
-          During this journey I've been using different online resources such as <a href='https://udemy.com/'>Udemy</a> and <a href='https://frontendmaster.com/'>Frontend Masters</a> to gain knowledge and experience.
-          If I'm not coding I'm always reading about code cause it is the fullfilling feeling of always learning that truely makes programming the choice for me.
+          Hello, I'm Kenta and my journey as a self-taught developer started in 2018 when I realized that my interest and passion involved programming.
+          The idea that you can build something that can be accessed anywhere in the world from a wide variety of devices was what reallly amazed and brought me on this path.
+        </S.Text>
+        <S.Text>
+          During this journey I've been using different online resources such as <a href='https://udemy.com/' target='_blank' rel='noopener noreferrer'>Udemy</a> and <a href='https://frontendmaster.com/' target='_blank' rel='noopener noreferrer'>Frontend Masters</a> to gain knowledge and experience in different technologies and modern standards.
+          If I'm not coding, I'm reading about code cause it's the fullfilling feeling of always learning that truly makes programming the choice for me.
         </S.Text>
         <SS.Line />
         <Toolbox />

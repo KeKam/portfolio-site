@@ -28,7 +28,7 @@ const HomePage = ({ data }) => {
       </Helmet>
       <NavBar />
       <Banner bannerImg={data.bannerImg} />
-      <About />
+      <About portraitImg={data.portraitImg} />
       <S.Line />
       <Projects projectImages={projectImageData} />
       <S.Line />
@@ -49,6 +49,14 @@ export const query = graphql`
     }
 
     bannerImg: file(relativePath: { eq: "workspace.jpg" }) {
+      childImageSharp {
+        fluid(quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    portraitImg: file(relativePath: { eq: "kenta.jpg" }) {
       childImageSharp {
         fluid(quality: 100) {
           ...GatsbyImageSharpFluid

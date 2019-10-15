@@ -8,7 +8,10 @@ const Toolbox = () => {
         Toolbox
       </S.Title>
       <S.Text>
-        My goal as a developer is to create projects with modern user experiences that are simple, but still achieves the desired functionality. Below you can find some of the technologies and tools that I have encountered and used during my journey and I always look forward to encounter and learn even more.
+        My goal as a developer is to create projects with modern user experiences that are simple, but still achieves the desired functionality.
+      </S.Text>
+      <S.Text>
+        Below you can find some of the technologies and tools that I have encountered and used during my journey and I always look forward to encounter and learn even more.
       </S.Text>
       <S.Container>
         <S.Logo>

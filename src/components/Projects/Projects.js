@@ -26,6 +26,7 @@ const Projects = ({ projectImages }) => {
                   href={project.url}
                   target='_blank'
                   rel='noopener noreferrer'
+                  title='Link to project'
                 >
                   <S.ImageContainer>
                     <S.Image 
@@ -47,10 +48,11 @@ const Projects = ({ projectImages }) => {
                       href={project.github}
                       target='_blank' 
                       rel='noopener noreferrer'
+                      title='Link to github repository'
                     >
                       <S.GitHub
                         icon={['fab', 'github']}
-                        alt='Github link'
+                        alt='Github icon'
                       />
                     </a>
                   </S.GitHubContainer>

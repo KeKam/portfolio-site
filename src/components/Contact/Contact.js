@@ -19,9 +19,9 @@ const Contact = () => {
             <S.Item key={contact.url}>
               <S.Link
                 href={contact.url}
-                target="_blank"
+                target='_blank'
                 title={`Link to my ${contact.name} account`}
-                rel="noopener noreferrer"
+                rel='noopener noreferrer'
               >
                 <S.ContactIcon
                   icon={[`${contact.prefix}`, `${contact.icon}`]}

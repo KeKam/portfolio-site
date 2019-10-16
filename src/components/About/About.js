@@ -9,7 +9,6 @@ const About = ({ portraitImg }) => {
       <SS.SectionContent>
         <S.ImageContainer>
           <S.Image 
-            title='About image'
             alt='Image of Kenta'
             fluid={portraitImg.childImageSharp.fluid}
           />

@@ -6,7 +6,6 @@ const Banner = ({ bannerImg }) => {
     <S.Wrapper>
       <S.Overlay>
         <S.Image
-          title='Banner image'
           alt='Image of a laptop'
           fluid={bannerImg.childImageSharp.fluid}
         />
@@ -21,7 +20,7 @@ const Banner = ({ bannerImg }) => {
         </S.SubTitle>
       </S.Header>
       <S.ArrowContainer>
-        <S.Link to='#about' aria-label='Jump to about section' animate={{ duration: 600 }} className='arrow-button'>
+        <S.Link to='#about' title='Jump to about section' animate={{ duration: 600 }} className='arrow-button'>
           <S.Arrow icon={['fas', 'angle-double-down']}/>
         </S.Link>
       </S.ArrowContainer>

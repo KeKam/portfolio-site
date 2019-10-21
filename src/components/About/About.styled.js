@@ -39,7 +39,7 @@ About.Image = styled(Img)`
   width: 100%;
   height: 100%;
   border-radius: 40px;
-  filter: saturate(200%);
+  filter: saturate(150%);
 
   @media (min-width: 45rem) {
     width: 65%;

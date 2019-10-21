@@ -3,7 +3,7 @@ import { Layout as S } from './Layout.styled';
 
 export default ({ children }) => {
   return (
-    <div id='home'>
+    <div>
       <S.GlobalStyle />
       {children}
     </div>

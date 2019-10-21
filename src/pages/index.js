@@ -4,15 +4,26 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
+import styled from 'styled-components';
 import About from '../components/About/About';
 import Banner from '../components/Banner/Banner';
 import Contact from '../components/Contact/Contact';
 import NavBar from '../components/NavBar/NavBar';
 import Projects from '../components/Projects/Projects';
+import Layout from '../components/Layout/Layout';
 import favicon from '../../static/favicon.ico';
-import { HomePage as S } from './index.styled';
 import 'normalize.css';
 
+const Line = styled.hr`
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  border: 0;
+  height: 4px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 255, 255), rgba(0, 0, 0, 0));
+`;
 
 const HomePage = ({ data }) => {
   const { edges: projectImageData } = data.projectImages;
@@ -20,19 +31,20 @@ const HomePage = ({ data }) => {
   const metaDescription = data.site.siteMetadata.description;
   return (
     <div id='home'>
-      <S.GlobalStyle />
       <Helmet>
         <title>{siteTitle}</title>
         <meta name='description' content={metaDescription} />
         <link rel='icon' href={favicon} />
       </Helmet>
-      <NavBar />
-      <Banner bannerImg={data.bannerImg} />
-      <About portraitImg={data.portraitImg} />
-      <S.Line />
-      <Projects projectImages={projectImageData} />
-      <S.Line />
-      <Contact />
+      <Layout>
+        <NavBar />
+        <Banner bannerImg={data.bannerImg} />
+        <About portraitImg={data.portraitImg} />
+        <Line />
+        <Projects projectImages={projectImageData} />
+        <Line />
+        <Contact />
+      </Layout>
     </div>
   );
 }

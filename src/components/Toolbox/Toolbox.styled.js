@@ -28,7 +28,7 @@ Toolbox.Container = styled.div`
   padding: 2em;
   border-radius: 2em;
   box-sizing: border-box;
-  background-color: rgba(75, 75, 75, 0.08);
+  background-color: rgba(45, 45, 45, 0.5);
 `;
 
 Toolbox.Logo = styled.div`
@@ -38,5 +38,15 @@ Toolbox.Logo = styled.div`
   @media (min-width: 45rem) {
     width: 4.5em;
     margin: 0.5em;
+  }
+`;
+
+Toolbox.Image = styled.img`
+  width: 3.5em;
+  height: 3.5em;
+
+  @media (min-width: 45rem) {
+    width: 4.5em;
+    height: 4.5em;
   }
 `;

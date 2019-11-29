@@ -1,5 +1,5 @@
 import React from 'react';
-import Logos from '../../images/logos/logos';
+import logos from '../../images/logos/logos';
 import { Toolbox as S } from './Toolbox.styled';
 
 const Toolbox = () => {
@@ -15,10 +15,10 @@ const Toolbox = () => {
         Below you can find some of the technologies and tools that I have encountered and used during my journey and I always look forward to encounter and learn even more.
       </S.Text>
       <S.Container>
-        {Logos.map(Logo => {
+        {logos.map(logo => {
           return (
-            <S.Logo key={Logo.id}>
-              <S.Image src={Logo.src} alt={Logo.alt} />
+            <S.Logo key={logo.id}>
+              <S.Image src={logo.src} alt={logo.alt} />
             </S.Logo>
           )
         })}

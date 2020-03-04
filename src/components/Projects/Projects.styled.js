@@ -50,10 +50,10 @@ Projects.Image = styled(Img)`
   width: 100%;
   height: 100%;
   border-radius: 5px 5px 0 0;
-  transition: all 1.5s ease;
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
+    transition: transform 3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
   }
 `;
 

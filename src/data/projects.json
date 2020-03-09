@@ -12,5 +12,12 @@
     "img": "budgetify.png",
     "url": "https://whispering-tundra-45846.herokuapp.com/",
     "github": "https://github.com/KeKam/budget-app"
+  },
+  {
+    "name": "Four Seasons",
+    "description": "A fullstack picture store app.",
+    "img": "four-seasons.png",
+    "url": "https://four-seasons.herokuapp.com/",
+    "github": "https://github.com/KeKam/store-app"
   }
 ]

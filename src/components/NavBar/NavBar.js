@@ -2,17 +2,18 @@ import React, { useState, useEffect } from 'react';
 import { NavBar as S } from './NavBar.styled';
 
 const NavBar = () => {
-  const [ hasScrolledDown, setHasScrolledDown ] = useState(false);
+  const [hasScrolledDown, setHasScrolledDown] = useState(false);
 
   const handleScroll = () => {
-    const bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    const bodyScrollTop =
+      document.documentElement.scrollTop || document.body.scrollTop;
     let scrolledDown = bodyScrollTop > 75 ? true : false;
     setHasScrolledDown(scrolledDown);
-  }
+  };
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
-  })
+  });
 
   return (
     <S.Bar hasScrolledDown={hasScrolledDown}>
@@ -40,6 +41,6 @@ const NavBar = () => {
       </S.List>
     </S.Bar>
   );
-}
+};
 
 export default NavBar;

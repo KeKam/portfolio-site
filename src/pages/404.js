@@ -25,7 +25,7 @@ const Title = styled.h1`
   }
 `;
 
-const Text= styled(Title)`
+const Text = styled(Title)`
   top: 55%;
   margin-top: 1em;
 `;
@@ -38,15 +38,13 @@ const HomeLink = styled(Link)`
 const NotFound = () => {
   return (
     <Wrapper>
-      <Title>
-        Page not found
-      </Title>
+      <Title>Page not found</Title>
       <Text as='p'>
         The page you are looking for does not exist.
         <HomeLink to='/#home'>Go back to home</HomeLink>
       </Text>
     </Wrapper>
   );
-}
+};
 
 export default NotFound;

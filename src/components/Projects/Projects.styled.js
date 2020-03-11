@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Img from 'gatsby-image';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const Projects = () => {};
 
@@ -37,7 +37,7 @@ Projects.Item = styled.div`
   border: thin solid rgba(0, 0, 0, 0);
   border-radius: 5px;
   background-color: rgba(238, 238, 238, 0.048);
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 `;
 
 Projects.ImageContainer = styled.div`

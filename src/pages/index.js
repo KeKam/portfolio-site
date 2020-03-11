@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { fas } from '@fortawesome/free-solid-svg-icons'
+import { fas } from '@fortawesome/free-solid-svg-icons';
 import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
 import styled from 'styled-components';
@@ -22,7 +22,12 @@ const Line = styled.hr`
   margin-inline-end: auto;
   border: 0;
   height: 4px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 255, 255), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgb(255, 255, 255),
+    rgba(0, 0, 0, 0)
+  );
 `;
 
 const HomePage = ({ data }) => {
@@ -47,7 +52,7 @@ const HomePage = ({ data }) => {
       </Layout>
     </div>
   );
-}
+};
 
 library.add(fab, fas);
 
@@ -93,6 +98,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
 export default HomePage;

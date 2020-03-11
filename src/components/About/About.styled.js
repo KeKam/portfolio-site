@@ -19,7 +19,7 @@ About.Text = styled.h3`
   line-height: 25px;
 
   a {
-    color: #BEBEBE;
+    color: #bebebe;
     text-decoration: none;
     font-style: italic;
   }

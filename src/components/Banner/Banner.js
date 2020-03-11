@@ -11,21 +11,22 @@ const Banner = ({ bannerImg }) => {
         />
       </S.Overlay>
       <S.Header>
-        <S.Title>
-          Kenta Kamimura
-        </S.Title>
+        <S.Title>Kenta Kamimura</S.Title>
         <S.Line />
-        <S.SubTitle>
-          Web Developer
-        </S.SubTitle>
+        <S.SubTitle>Web Developer</S.SubTitle>
       </S.Header>
       <S.ArrowContainer>
-        <S.Link to='#about' title='Jump to about section' animate={{ duration: 600 }} className='arrow-button'>
-          <S.Arrow icon={['fas', 'angle-double-down']}/>
+        <S.Link
+          to='#about'
+          title='Jump to about section'
+          animate={{ duration: 600 }}
+          className='arrow-button'
+        >
+          <S.Arrow icon={['fas', 'angle-double-down']} />
         </S.Link>
       </S.ArrowContainer>
     </S.Wrapper>
   );
-}
+};
 
-export default Banner; 
+export default Banner;

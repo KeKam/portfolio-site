@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react';
 import { Layout as S } from './Layout.styled';
 
 export default ({ children }) => {
@@ -8,5 +8,4 @@ export default ({ children }) => {
       {children}
     </div>
   );
-}
-
+};

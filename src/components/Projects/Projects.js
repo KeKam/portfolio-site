@@ -7,13 +7,11 @@ const Projects = ({ projectImages }) => {
   return (
     <SS.Section id='projects'>
       <SS.SectionContent>
-      <S.Title>
-        Projects
-      </S.Title>
-      <S.Text>
-        Below you can find some of my projects that I've been working on.
-      </S.Text>
-      <SS.Line />
+        <S.Title>Projects</S.Title>
+        <S.Text>
+          Below you can find some of my projects that I've been working on.
+        </S.Text>
+        <SS.Line />
         <S.Showcase>
           {projectData.map(project => {
             const image = projectImages.find(n => {
@@ -29,7 +27,7 @@ const Projects = ({ projectImages }) => {
                   title='Link to project'
                 >
                   <S.ImageContainer>
-                    <S.Image 
+                    <S.Image
                       title={project.name}
                       alt='Screenshot of the project'
                       fluid={imageFluid}
@@ -37,23 +35,16 @@ const Projects = ({ projectImages }) => {
                   </S.ImageContainer>
                 </a>
                 <S.InfoContainer>
-                  <S.Name>
-                    {project.name}
-                  </S.Name>
-                  <S.Description>
-                    {project.description}
-                  </S.Description>
+                  <S.Name>{project.name}</S.Name>
+                  <S.Description>{project.description}</S.Description>
                   <S.GitHubContainer>
                     <a
                       href={project.github}
-                      target='_blank' 
+                      target='_blank'
                       rel='noopener noreferrer'
                       title='Link to github repository'
                     >
-                      <S.GitHub
-                        icon={['fab', 'github']}
-                        alt='Github icon'
-                      />
+                      <S.GitHub icon={['fab', 'github']} alt='Github icon' />
                     </a>
                   </S.GitHubContainer>
                 </S.InfoContainer>
@@ -64,6 +55,6 @@ const Projects = ({ projectImages }) => {
       </SS.SectionContent>
     </SS.Section>
   );
-}
+};
 
 export default Projects;

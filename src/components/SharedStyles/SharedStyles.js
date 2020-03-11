@@ -23,5 +23,10 @@ SharedStyles.Line = styled.hr`
   margin-inline-end: auto;
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 255, 255), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgb(255, 255, 255),
+    rgba(0, 0, 0, 0)
+  );
 `;

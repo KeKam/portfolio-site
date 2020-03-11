@@ -1,15 +1,16 @@
 import styled from 'styled-components';
 import Scrollschor from 'react-scrollchor';
 
-export const NavBar= () => {};
+export const NavBar = () => {};
 
-NavBar.Bar= styled.nav`
+NavBar.Bar = styled.nav`
   position: fixed;
   top: 0;
   z-index: 1;
   width: 100%;
   height: 3.5em;
-  background-color: ${props => props.hasScrolledDown ? 'rgba(0, 0, 0, 0.9)' : 'transparent'};
+  background-color: ${props =>
+    props.hasScrolledDown ? 'rgba(0, 0, 0, 0.9)' : 'transparent'};
   transition: all 1s ease;
 `;
 
@@ -34,7 +35,7 @@ NavBar.Item = styled.li`
   }
 `;
 
-NavBar.Link= styled(Scrollschor)`
+NavBar.Link = styled(Scrollschor)`
   color: white;
   text-decoration: none;
   transition: all 0.5s ease;

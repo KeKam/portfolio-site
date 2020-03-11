@@ -7,12 +7,8 @@ const Contact = () => {
   return (
     <SS.Section id='contact'>
       <SS.SectionContent>
-        <S.Title>
-          Contact
-        </S.Title>
-        <S.Text>
-          Have any questions? Feel free to contact me!
-        </S.Text>
+        <S.Title>Contact</S.Title>
+        <S.Text>Have any questions? Feel free to contact me!</S.Text>
         <S.Line />
         <S.ContactContainer>
           {contactData.map(contact => (
@@ -27,16 +23,14 @@ const Contact = () => {
                   icon={[`${contact.prefix}`, `${contact.icon}`]}
                   alt={`Link to my ${contact.name} account`}
                 />
-                <S.IconText>
-                  {contact.name}
-                </S.IconText>
+                <S.IconText>{contact.name}</S.IconText>
               </S.Link>
             </S.Item>
-          ))} 
+          ))}
         </S.ContactContainer>
       </SS.SectionContent>
     </SS.Section>
   );
-}
+};
 
 export default Contact;

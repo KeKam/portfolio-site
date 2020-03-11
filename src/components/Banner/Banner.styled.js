@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 import Img from 'gatsby-image';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Scrollschor from 'react-scrollchor';
 
 export const Banner = () => {};
-
 
 Banner.Wrapper = styled.div`
   width: 100%;
@@ -54,7 +53,12 @@ Banner.Line = styled.hr`
   margin-inline-end: auto;
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 255, 255), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgb(255, 255, 255),
+    rgba(0, 0, 0, 0)
+  );
 `;
 
 Banner.SubTitle = styled.p`

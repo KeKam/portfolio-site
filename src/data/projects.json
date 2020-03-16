@@ -15,7 +15,7 @@
   },
   {
     "name": "Four Seasons",
-    "description": "A fullstack picture store app.",
+    "description": "A full-stack E-commerce seasonal picture store app.",
     "img": "four-seasons.png",
     "url": "https://four-seasons.herokuapp.com/",
     "github": "https://github.com/KeKam/store-app"

@@ -31,17 +31,16 @@ Projects.Showcase = styled.div`
 
 Projects.Item = styled.div`
   width: 20em;
-  height: 27em;
+  height: 22em;
   display: block;
   margin-top: 2.5em;
-  border: thin solid rgba(0, 0, 0, 0);
   border-radius: 5px;
   background-color: rgba(238, 238, 238, 0.048);
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 `;
 
 Projects.ImageContainer = styled.div`
-  height: 50%;
+  height: 47%;
   overflow: hidden;
   border-bottom: 0.2em solid black;
 `;
@@ -60,7 +59,7 @@ Projects.Image = styled(Img)`
 Projects.InfoContainer = styled.div`
   max-width: 20em;
   max-height: 13.5em;
-  position: absolute;
+  position: relative;
   color: white;
   padding: 0 1em;
   width: 100%;
@@ -91,10 +90,11 @@ Projects.Link = styled.a`
 Projects.GitHub = styled(FontAwesomeIcon)`
   font-size: 3em;
   color: white;
-  margin-top: 3em;
   float: right;
   transition: all 0.5s ease;
-  position: relative;
+  position: absolute;
+  top: 120px;
+  right: 10px;
 
   &:hover {
     color: grey;

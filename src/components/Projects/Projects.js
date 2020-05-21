@@ -13,8 +13,8 @@ const Projects = ({ projectImages }) => {
         </S.Text>
         <SS.Line />
         <S.Showcase>
-          {projectData.map(project => {
-            const image = projectImages.find(n => {
+          {projectData.map((project) => {
+            const image = projectImages.find((n) => {
               return n.node.relativePath === `projects/${project.img}`;
             });
             const imageFluid = image.node.childImageSharp.fluid;

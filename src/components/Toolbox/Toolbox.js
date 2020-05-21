@@ -17,7 +17,7 @@ const Toolbox = () => {
         encounter and learn even more.
       </S.Text>
       <S.Container>
-        {logos.map(logo => {
+        {logos.map((logo) => {
           return (
             <S.Logo key={logo.id}>
               <S.Image src={logo.src} alt={logo.alt} />

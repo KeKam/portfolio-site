@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Kenta Kamimura || Portfolio',
     description: 'Self-taught web developer',
-    siteUrl: 'https://www.kentakamimura.dev'
+    siteUrl: 'https://www.kentakamimura.dev',
   },
   plugins: [
     {
@@ -14,33 +14,33 @@ module.exports = {
         background_color: `#000000`,
         theme_color: `#000000`,
         display: `standalone`,
-        icon: `src/images/icon.png` // This path is relative to the root of the site.
-      }
+        icon: `src/images/icon.png`, // This path is relative to the root of the site.
+      },
     },
     {
       resolve: `gatsby-plugin-html-attributes`,
       options: {
-        lang: `en`
-      }
+        lang: `en`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `data`,
-        path: `${__dirname}/src/data/`
-      }
+        path: `${__dirname}/src/data/`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`
-      }
+        path: `${__dirname}/src/images`,
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-styled-components`
-  ]
+    `gatsby-plugin-styled-components`,
+  ],
 };

@@ -11,7 +11,7 @@ const Contact = () => {
         <S.Text>Have any questions? Feel free to contact me!</S.Text>
         <S.Line />
         <S.ContactContainer>
-          {contactData.map(contact => (
+          {contactData.map((contact) => (
             <S.Item key={contact.url}>
               <S.Link
                 href={contact.url}

@@ -1,23 +1,30 @@
 [
   {
     "name": "Facialify",
-    "description": "An app that can detect faces in your pictures.",
+    "description": "React web app that can detect faces in your pictures.",
     "img": "facialify.png",
     "url": "https://facialify-app.herokuapp.com/",
     "github": "https://github.com/KeKam/face-recognition-app"
   },
   {
     "name": "Budgetify",
-    "description": "An app that helps you keep track of your expenses.",
+    "description": "React web app that helps you keep track of your expenses.",
     "img": "budgetify.png",
     "url": "https://whispering-tundra-45846.herokuapp.com/",
     "github": "https://github.com/KeKam/budget-app"
   },
   {
     "name": "Four Seasons",
-    "description": "A full-stack E-commerce seasonal picture store app.",
+    "description": "Full-stack e-commerce picture store react web app.",
     "img": "four-seasons.png",
     "url": "https://four-seasons.herokuapp.com/",
     "github": "https://github.com/KeKam/store-app"
+  },
+  {
+    "name": "MovieDB",
+    "description": "Full-stack movie database react web app.",
+    "img": "moviedb.png",
+    "url": "https://moviedb-live.herokuapp.com/",
+    "github": "https://github.com/KeKam/moviedb-app"
   }
 ]

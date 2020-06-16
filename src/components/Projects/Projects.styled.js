@@ -31,8 +31,7 @@ Projects.Showcase = styled.div`
 
 Projects.Item = styled.div`
   width: 20em;
-  height: 22em;
-  display: block;
+  height: 21em;
   margin-top: 2.5em;
   border-radius: 5px;
   background-color: rgba(238, 238, 238, 0.048);
@@ -40,14 +39,12 @@ Projects.Item = styled.div`
 `;
 
 Projects.ImageContainer = styled.div`
-  height: 47%;
+  height: 45%;
   overflow: hidden;
   border-bottom: 0.2em solid black;
 `;
 
 Projects.Image = styled(Img)`
-  width: 100%;
-  height: 100%;
   border-radius: 5px 5px 0 0;
 
   &:hover {

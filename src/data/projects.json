@@ -8,21 +8,21 @@
   },
   {
     "name": "Budgetify",
-    "description": "React web app that helps you keep track of your expenses.",
+    "description": "Full-stack react web app that helps you keep track of your expenses.",
     "img": "budgetify.png",
     "url": "https://whispering-tundra-45846.herokuapp.com/",
     "github": "https://github.com/KeKam/budget-app"
   },
   {
     "name": "Four Seasons",
-    "description": "Full-stack e-commerce picture store react web app.",
+    "description": "Full-stack react e-commerce picture store web app.",
     "img": "four-seasons.png",
     "url": "https://four-seasons.herokuapp.com/",
     "github": "https://github.com/KeKam/store-app"
   },
   {
     "name": "MovieDB",
-    "description": "Full-stack movie database react web app.",
+    "description": "Full-stack react movie database web app.",
     "img": "moviedb.png",
     "url": "https://moviedb-live.herokuapp.com/",
     "github": "https://github.com/KeKam/moviedb-app"

@@ -19,7 +19,7 @@ const About = ({ portraitImg }) => {
           2018 when I realized that my interest and passion involved
           programming. The idea that you can build something that can be
           accessed anywhere in the world from a wide variety of devices was what
-          reallly amazed and brought me on this path.
+          really amazed and brought me on this path.
         </S.Text>
         <S.Text>
           During this journey I've been using different online resources such as{' '}

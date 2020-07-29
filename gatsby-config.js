@@ -37,6 +37,17 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.kentakamimura.dev',
+        sitemap: 'https://www.kentakamimura.dev/sitemap.xml',
+        policy: [
+          { userAgent: '*', allow: '/' },
+          { userAgent: 'Googlebot-Image', disallow: '/' },
+        ],
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,

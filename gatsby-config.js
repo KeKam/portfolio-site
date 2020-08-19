@@ -44,6 +44,7 @@ module.exports = {
         sitemap: 'https://www.kentakamimura.dev/sitemap.xml',
         policy: [
           { userAgent: '*', allow: '/' },
+          { userAgent: '*', disallow: '/images/' },
           { userAgent: 'Googlebot-Image', disallow: '/' },
         ],
       },
